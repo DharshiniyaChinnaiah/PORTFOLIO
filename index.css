@@ -1613,9 +1613,11 @@ font-family:Afacad,sans-serif;
 @media only screen and (min-width:300px) and (max-width:600px){
     .nav2{
         display:none;
+        
     }
     .second{
         display:none;
+       
     }
     .td1{
         display:block;
@@ -1836,36 +1838,46 @@ width:30%;
     position:absolute;
     top:800px;
 }
-.imagebox{
-    top:4080px;
-    left:10px;
-}
-.imagebox22{
-    top:4790px;
-    left:10px;
-}
-.imagebox33{
-    top:5450px;
-    left:10px;
+.imagebox,.imagebox22,.imagebox33{
+    display:none;
 }
 .projects{
     min-height:300vh;
     background-color: black;
 } 
 .global
-{
+{ 
+    position:relative;
     left:120px;
     top:40px;
+    animation:global;
+    animation-duration: 1s;
+    
+}
+@keyframes global {
+    0%{
+        left:100%;
+   }
+   100%{
+    left:100px;
+   }
+    
 }
 .global22
 {
+    position:relative;
     left:120px;
     top:390px;
+    animation-name: global;
+    animation-duration:  1s;
 }
 .global33
 {
+    position:relative;
     left:100px;
-    top:-500px;
+    top:-520px;
+    animation: global;
+    animation-duration:  1s;
 }
 .content1{
   top:380px;
